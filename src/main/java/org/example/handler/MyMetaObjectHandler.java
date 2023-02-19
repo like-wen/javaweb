@@ -14,6 +14,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
         //fieldName不是字段名(gmt_create),而是类的属性名(gmtCreate)
         this.setFieldValByName("createdTime", new Date(), metaObject);
         this.setFieldValByName("updateTime", new Date(), metaObject);
+        this.strictInsertFill(metaObject,"isDeleted",Integer.class,0);
     }
     @Override
     public void updateFill(MetaObject metaObject) {

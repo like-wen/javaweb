@@ -13,7 +13,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
 //丝袜哥地址:
-//http://localhost:8082/doc.html#/home
+//http://localhost:8081/doc.html#/home
 @Configuration
 @EnableKnife4j
 public class SwaggerConfig extends WebMvcConfigurationSupport {

@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor  //全参数构造器
 @NoArgsConstructor   //生成无参数构造
-public class WaterException extends RuntimeException {
+public class JavaWebException extends RuntimeException {
     private Integer code;//状态码
     private String msg;//输出消息
 }

@@ -31,9 +31,9 @@ public class GlobalExceptionHandler {
     }
 
     //自定义的异常处理
-    @ExceptionHandler(WaterException.class)
+    @ExceptionHandler(JavaWebException.class)
     @ResponseBody
-    public R error(WaterException e){
+    public R error(JavaWebException e){
         log.error(e.getMessage());
         e.printStackTrace();
         return R.error().code(e.getCode()).msg(e.getMsg());

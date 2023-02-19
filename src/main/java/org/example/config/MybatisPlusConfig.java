@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@MapperScan("com.lkw.stall_management.mapper")
+    @MapperScan("org.example.mapper")
 public class MybatisPlusConfig {
     //乐观锁
 

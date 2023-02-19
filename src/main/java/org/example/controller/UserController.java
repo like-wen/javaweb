@@ -58,7 +58,10 @@ public class UserController {
             //使用allergy的id查询allergy的对象
             Allergy allergy = allergyService.getById(user.getAllergyId());
             //将id换成type字段
-            user.setAllergyId(allergy.getType());
+            if(allergy==null)
+                user.setAllergyId("无");
+            else
+                user.setAllergyId(allergy.getType());
 
         }
         return R.ok().data("list", list);
@@ -105,7 +108,10 @@ public class UserController {
             //使用allergy的id查询allergy的对象
             Allergy allergy = allergyService.getById(user.getAllergyId());
             //将id换成type字段
-            user.setAllergyId(allergy.getType());
+            if(allergy==null)
+                user.setAllergyId("无");
+            else
+                user.setAllergyId(allergy.getType());
 
         }
         return R.ok().data("page", records);
