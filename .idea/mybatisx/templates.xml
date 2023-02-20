@@ -69,44 +69,8 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="Allergy" />
-                  <option name="tableName" value="allergy" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="Appointment" />
-                  <option name="tableName" value="appointment" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="Column" />
-                  <option name="tableName" value="column" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="Company" />
-                  <option name="tableName" value="company" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="Department" />
-                  <option name="tableName" value="department" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="Disease" />
-                  <option name="tableName" value="disease" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="Dispensing" />
-                  <option name="tableName" value="dispensing" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="Doctor" />
-                  <option name="tableName" value="doctor" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="Medicine" />
-                  <option name="tableName" value="medicine" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="User" />
-                  <option name="tableName" value="user" />
+                  <option name="className" value="Columntable" />
+                  <option name="tableName" value="columntable" />
                 </TableUIInfo>
               </list>
             </option>
