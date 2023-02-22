@@ -3,7 +3,9 @@ package org.example.utils;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Data
@@ -18,7 +20,7 @@ public class R {
     private String msg;
 
     @ApiModelProperty(value = "返回数据")
-    private Map<String, Object> data = new HashMap<String, Object>();
+    private Object data;
 
     //构造器私有化,使得不能new该对象
     private R() {
@@ -57,13 +59,13 @@ public class R {
         return this;
     }
 
-    public R data(String key, Object value) {
-        this.data.put(key, value);
+    public R data(List list) {
+        this.data=list;
+        return this;
+    }
+    public R data(Object o){
+        this.data=o;
         return this;
     }
 
-    public R data(Map<String, Object> map) {
-        this.setData(map);
-        return this;
-    }
 }

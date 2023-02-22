@@ -64,7 +64,7 @@ public class UserController {
                 user.setAllergyId(allergy.getType());
 
         }
-        return R.ok().data("list", list);
+        return R.ok().data(list);
     }
 
     /**
@@ -114,7 +114,7 @@ public class UserController {
                 user.setAllergyId(allergy.getType());
 
         }
-        return R.ok().data("page", records);
+        return R.ok().data( records);
 
 
     }
